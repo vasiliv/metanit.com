@@ -62,6 +62,17 @@ namespace _10._Views.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Login(string login, string password)
+        {
+            string authData = $"Login: {login}   Password: {password}";
+            return Content(authData);
+        }
         public IActionResult Privacy()
         {
             return View();
