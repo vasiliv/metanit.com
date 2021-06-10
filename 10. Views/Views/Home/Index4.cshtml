@@ -1,0 +1,10 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>В списке @Model.Count элемента</h3>
+@foreach (string country in Model)
+{
+    <p>@country</p>
+}
