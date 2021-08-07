@@ -1,12 +1,12 @@
-﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityUser>
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
 <ul>
-    @foreach (var user in Model)
+    @foreach (var role in Model)
     {
-        <li>@user.Email</li>
+        <li>@role.Name</li>
     }
 </ul>
